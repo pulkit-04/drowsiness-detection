@@ -2,12 +2,15 @@
 An application to find if a driver or person is feeling sleepy and give an alarm to him/her up
 
 
-
-## You will need the code file drowsiness.py
+## Files needed
+You will need the code file drowsiness.py
 1. A sound,alarm file (.wav)
-2. A shape_predictor_68_face_landmarks.dat file that to used to landmark 62 points on face at fix location through which python can get certain region of face
+2. A shape_predictor_68_face_landmarks.dat file that to used to landmark 62 points on face at fix location through which python can get certain region of face. you need to download this file
 
 ## You need to pip install following modules
+
+You can use pycharm, anaconda to do this project. Open their terminal and inatall these modules
+
 1. scipy
 2. imutils
 3. threading
