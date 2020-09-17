@@ -45,9 +45,7 @@ EYE_AR_THRESH = 0.25
   max=0.3
   EYE_AR_CONSEC_FRAMES = 30
 
-if ear > max:
-
-max=ear
+if ear > max:max=ear
       
 EYE_AR_THRESH = max*0.75
  
