@@ -23,9 +23,13 @@ Each eye is represented by 6 (x, y)-coordinates, starting at the left-corner of 
 With these points we find eye aspect ratio(ear) of each eye and take an average:.
 
 vertically distance.
+
 A = dist.euclidean(eye[1], eye[5]).
+
 B = dist.euclidean(eye[2], eye[4]).
+
 horizontally distance.
+
 C = dist.euclidean(eye[0], eye[3]).
 
 
@@ -33,3 +37,27 @@ C = dist.euclidean(eye[0], eye[3]).
 ear = (A + B) / (2.0 * C).
 
 similarly we will find ear for other eye.
+
+## condition1
+We initialize.
+
+EYE_AR_THRESH = 0.25
+  max=0.3
+  EYE_AR_CONSEC_FRAMES = 30
+
+if ear > max:
+
+max=ear
+      
+EYE_AR_THRESH = max*0.75
+ 
+## CONDITION2
+
+if ear < EYE_AR_THRESH:
+  COUNTER += 1
+  
+  if COUNTER >= EYE_AR_CONSEC_FRAMES:
+    ALARM WILL START
+      
+      
+
