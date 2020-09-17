@@ -21,6 +21,7 @@ An application to find if a driver or person is feeling sleepy and give an alarm
 Each eye is represented by 6 (x, y)-coordinates, starting at the left-corner of the eye (as if you were looking at the person), and then working clockwise around the eye:.
 
 With these points we find eye aspect ratio(ear) of each eye and take an average:.
+
 vertically distance.
 A = dist.euclidean(eye[1], eye[5]).
 B = dist.euclidean(eye[2], eye[4]).
