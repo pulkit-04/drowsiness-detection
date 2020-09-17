@@ -8,8 +8,8 @@ A sound,alarm file (.wav)
 A shape_predictor_68_face_landmarks.dat file that to used to landmark 62 points on face at fix location through which python can get certain region of face
 
 ## You need to pip install following modules
-scipy,
-imutils,
+1. scipy,
+2. imutils,
 imutils,
 threading,
 numpy,
